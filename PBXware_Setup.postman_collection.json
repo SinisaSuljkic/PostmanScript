@@ -1,0 +1,3193 @@
+{
+	"info": {
+		"_postman_id": "a2a940e9-510a-4d14-9838-eceea592883f",
+		"name": "PBXware_Setup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26165058"
+	},
+	"item": [
+		{
+			"name": "Tenant_400",
+			"item": [
+				{
+					"name": "Create Tenant Package",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.package.add&name=API_Paket&extensions=20&voicemails=20&queues=20&ivrs=20&cfs=20&rgroups=20&hot_desking=20&call_recordings=1&monitoring=1&call_screening=1&restrict_splans=0&allowed_service_plans=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.package.add"
+								},
+								{
+									"key": "name",
+									"value": "API_Paket"
+								},
+								{
+									"key": "extensions",
+									"value": "20"
+								},
+								{
+									"key": "voicemails",
+									"value": "20"
+								},
+								{
+									"key": "queues",
+									"value": "20"
+								},
+								{
+									"key": "ivrs",
+									"value": "20"
+								},
+								{
+									"key": "cfs",
+									"value": "20"
+								},
+								{
+									"key": "rgroups",
+									"value": "20"
+								},
+								{
+									"key": "hot_desking",
+									"value": "20"
+								},
+								{
+									"key": "call_recordings",
+									"value": "1"
+								},
+								{
+									"key": "monitoring",
+									"value": "1"
+								},
+								{
+									"key": "call_screening",
+									"value": "1"
+								},
+								{
+									"key": "restrict_splans",
+									"value": "0"
+								},
+								{
+									"key": "allowed_service_plans",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Tenant 400",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.tenant.add&tenant_name=Tenant_400&tenant_code=400&package=1&apusername=admin&appassword=Test123!&ext_length=3&country=135&national=0&international=00&localcodecs=ulaw:alaw:g722:h264&remotecodecs=ulaw:alaw:g722:h264:g729:gsm&networkcodecs=gsm",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.tenant.add"
+								},
+								{
+									"key": "tenant_name",
+									"value": "Tenant_400"
+								},
+								{
+									"key": "tenant_code",
+									"value": "400"
+								},
+								{
+									"key": "package",
+									"value": "1"
+								},
+								{
+									"key": "apusername",
+									"value": "admin"
+								},
+								{
+									"key": "appassword",
+									"value": "Test123!"
+								},
+								{
+									"key": "ext_length",
+									"value": "3"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "localcodecs",
+									"value": "ulaw:alaw:g722:h264"
+								},
+								{
+									"key": "remotecodecs",
+									"value": "ulaw:alaw:g722:h264:g729:gsm"
+								},
+								{
+									"key": "networkcodecs",
+									"value": "gsm"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 401",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=401&name=Ext401&email=ext401@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "401"
+								},
+								{
+									"key": "name",
+									"value": "Ext401"
+								},
+								{
+									"key": "email",
+									"value": "ext401@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 402",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=402&name=Ext402&email=ext402@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "402"
+								},
+								{
+									"key": "name",
+									"value": "Ext402"
+								},
+								{
+									"key": "email",
+									"value": "ext402@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 403",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=403&name=Ext403&email=ext403@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "403"
+								},
+								{
+									"key": "name",
+									"value": "Ext403"
+								},
+								{
+									"key": "email",
+									"value": "ext403@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=404&name=Ext404&email=ext404@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "404"
+								},
+								{
+									"key": "name",
+									"value": "Ext404"
+								},
+								{
+									"key": "email",
+									"value": "ext404@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 405",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=405&name=Ext405&email=ext405@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "405"
+								},
+								{
+									"key": "name",
+									"value": "Ext405"
+								},
+								{
+									"key": "email",
+									"value": "ext405@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Trunk to 91",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.trunk.add&server=1&name=TrunkTo_91&provider_id=20&type=friend&dtmfmode=rfc2833&status=active&country=135&national=0&international=00&e164a=yes&host=10.1.165.91&username=admin&insecure=port,invite&looserouting=yes&incominglimit=100&outgoinglimit=100&busylevel=0&codecs=ulaw,alaw&codecs_ptime=50,60&emerg_trunk=no",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.trunk.add"
+								},
+								{
+									"key": "server",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "TrunkTo_91"
+								},
+								{
+									"key": "provider_id",
+									"value": "20"
+								},
+								{
+									"key": "type",
+									"value": "friend"
+								},
+								{
+									"key": "dtmfmode",
+									"value": "rfc2833"
+								},
+								{
+									"key": "status",
+									"value": "active"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "e164a",
+									"value": "yes"
+								},
+								{
+									"key": "host",
+									"value": "10.1.165.91"
+								},
+								{
+									"key": "username",
+									"value": "admin"
+								},
+								{
+									"key": "insecure",
+									"value": "port,invite"
+								},
+								{
+									"key": "looserouting",
+									"value": "yes"
+								},
+								{
+									"key": "incominglimit",
+									"value": "100"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "100"
+								},
+								{
+									"key": "busylevel",
+									"value": "0"
+								},
+								{
+									"key": "codecs",
+									"value": "ulaw,alaw"
+								},
+								{
+									"key": "codecs_ptime",
+									"value": "50,60"
+								},
+								{
+									"key": "emerg_trunk",
+									"value": "no"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Trunk to 95",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.trunk.add&server=1&name=TrunkTo_95&provider_id=20&type=friend&dtmfmode=rfc2833&status=active&country=135&national=0&international=00&e164a=yes&host=10.1.165.95&username=admin&insecure=port,invite&looserouting=yes&incominglimit=100&outgoinglimit=100&busylevel=0&codecs=ulaw,alaw&codecs_ptime=50,60&emerg_trunk=no",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.trunk.add"
+								},
+								{
+									"key": "server",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "TrunkTo_95"
+								},
+								{
+									"key": "provider_id",
+									"value": "20"
+								},
+								{
+									"key": "type",
+									"value": "friend"
+								},
+								{
+									"key": "dtmfmode",
+									"value": "rfc2833"
+								},
+								{
+									"key": "status",
+									"value": "active"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "e164a",
+									"value": "yes"
+								},
+								{
+									"key": "host",
+									"value": "10.1.165.95"
+								},
+								{
+									"key": "username",
+									"value": "admin"
+								},
+								{
+									"key": "insecure",
+									"value": "port,invite"
+								},
+								{
+									"key": "looserouting",
+									"value": "yes"
+								},
+								{
+									"key": "incominglimit",
+									"value": "100"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "100"
+								},
+								{
+									"key": "busylevel",
+									"value": "0"
+								},
+								{
+									"key": "codecs",
+									"value": "ulaw,alaw"
+								},
+								{
+									"key": "codecs_ptime",
+									"value": "50,60"
+								},
+								{
+									"key": "emerg_trunk",
+									"value": "no"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 400401",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735400401&dest_type=0&destination=401&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735400401"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "401"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 400402",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735400402&dest_type=0&destination=402&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735400402"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "402"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 400403",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735400403&dest_type=0&destination=403&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735400403"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "403"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 400404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735400404&dest_type=0&destination=404&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735400404"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "404"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 400405",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_90}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735400405&dest_type=0&destination=405&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_90}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735400405"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "405"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tenant_420",
+			"item": [
+				{
+					"name": "Create Tenant Package",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.package.add&name=API_Paket&extensions=20&voicemails=20&queues=20&ivrs=20&cfs=20&rgroups=20&hot_desking=20&call_recordings=1&monitoring=1&call_screening=1&restrict_splans=0&allowed_service_plans=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.package.add"
+								},
+								{
+									"key": "name",
+									"value": "API_Paket"
+								},
+								{
+									"key": "extensions",
+									"value": "20"
+								},
+								{
+									"key": "voicemails",
+									"value": "20"
+								},
+								{
+									"key": "queues",
+									"value": "20"
+								},
+								{
+									"key": "ivrs",
+									"value": "20"
+								},
+								{
+									"key": "cfs",
+									"value": "20"
+								},
+								{
+									"key": "rgroups",
+									"value": "20"
+								},
+								{
+									"key": "hot_desking",
+									"value": "20"
+								},
+								{
+									"key": "call_recordings",
+									"value": "1"
+								},
+								{
+									"key": "monitoring",
+									"value": "1"
+								},
+								{
+									"key": "call_screening",
+									"value": "1"
+								},
+								{
+									"key": "restrict_splans",
+									"value": "0"
+								},
+								{
+									"key": "allowed_service_plans",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Tenant 420",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.tenant.add&tenant_name=Tenant_420&tenant_code=420&package=1&ext_length=3&country=135&national=0&international=00&apusername=admin&appassword=Test123!&localcodecs=ulaw:alaw:g722:h264&remotecodecs=ulaw:alaw:g722:h264:g729:gsm&networkcodecs=gsm",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.tenant.add"
+								},
+								{
+									"key": "tenant_name",
+									"value": "Tenant_420"
+								},
+								{
+									"key": "tenant_code",
+									"value": "420"
+								},
+								{
+									"key": "package",
+									"value": "1"
+								},
+								{
+									"key": "ext_length",
+									"value": "3"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "apusername",
+									"value": "admin"
+								},
+								{
+									"key": "appassword",
+									"value": "Test123!"
+								},
+								{
+									"key": "localcodecs",
+									"value": "ulaw:alaw:g722:h264"
+								},
+								{
+									"key": "remotecodecs",
+									"value": "ulaw:alaw:g722:h264:g729:gsm"
+								},
+								{
+									"key": "networkcodecs",
+									"value": "gsm"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 421",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=421&name=Ext421&email=ext421@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "421"
+								},
+								{
+									"key": "name",
+									"value": "Ext421"
+								},
+								{
+									"key": "email",
+									"value": "ext421@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 422",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=422&name=Ext422&email=ext422@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "422"
+								},
+								{
+									"key": "name",
+									"value": "Ext422"
+								},
+								{
+									"key": "email",
+									"value": "ext422@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 423",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=423&name=Ext423&email=ext423@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "423"
+								},
+								{
+									"key": "name",
+									"value": "Ext423"
+								},
+								{
+									"key": "email",
+									"value": "ext423@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 424",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=424&name=Ext424&email=ext424@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "424"
+								},
+								{
+									"key": "name",
+									"value": "Ext424"
+								},
+								{
+									"key": "email",
+									"value": "ext424@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 425",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=425&name=Ext425&email=ext425@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "425"
+								},
+								{
+									"key": "name",
+									"value": "Ext425"
+								},
+								{
+									"key": "email",
+									"value": "ext425@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Trunk to 90",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.trunk.add&server=1&name=TrunkTo_90&provider_id=20&type=friend&dtmfmode=rfc2833&status=active&country=135&national=0&international=00&e164a=yes&host=10.1.165.90&username=admin&insecure=port,invite&looserouting=yes&incominglimit=100&outgoinglimit=100&busylevel=0&codecs=ulaw,alaw&codecs_ptime=50,60&emerg_trunk=no",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.trunk.add"
+								},
+								{
+									"key": "server",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "TrunkTo_90"
+								},
+								{
+									"key": "provider_id",
+									"value": "20"
+								},
+								{
+									"key": "type",
+									"value": "friend"
+								},
+								{
+									"key": "dtmfmode",
+									"value": "rfc2833"
+								},
+								{
+									"key": "status",
+									"value": "active"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "e164a",
+									"value": "yes"
+								},
+								{
+									"key": "host",
+									"value": "10.1.165.90"
+								},
+								{
+									"key": "username",
+									"value": "admin"
+								},
+								{
+									"key": "insecure",
+									"value": "port,invite"
+								},
+								{
+									"key": "looserouting",
+									"value": "yes"
+								},
+								{
+									"key": "incominglimit",
+									"value": "100"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "100"
+								},
+								{
+									"key": "busylevel",
+									"value": "0"
+								},
+								{
+									"key": "codecs",
+									"value": "ulaw,alaw"
+								},
+								{
+									"key": "codecs_ptime",
+									"value": "50,60"
+								},
+								{
+									"key": "emerg_trunk",
+									"value": "no"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Trunk to 95",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.trunk.add&server=1&name=TrunkTo_95&provider_id=20&type=friend&dtmfmode=rfc2833&status=active&country=135&national=0&international=00&e164a=yes&host=10.1.165.95&username=admin&insecure=port,invite&looserouting=yes&incominglimit=100&outgoinglimit=100&busylevel=0&codecs=ulaw,alaw&codecs_ptime=50,60&emerg_trunk=no",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.trunk.add"
+								},
+								{
+									"key": "server",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "TrunkTo_95"
+								},
+								{
+									"key": "provider_id",
+									"value": "20"
+								},
+								{
+									"key": "type",
+									"value": "friend"
+								},
+								{
+									"key": "dtmfmode",
+									"value": "rfc2833"
+								},
+								{
+									"key": "status",
+									"value": "active"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "e164a",
+									"value": "yes"
+								},
+								{
+									"key": "host",
+									"value": "10.1.165.95"
+								},
+								{
+									"key": "username",
+									"value": "admin"
+								},
+								{
+									"key": "insecure",
+									"value": "port,invite"
+								},
+								{
+									"key": "looserouting",
+									"value": "yes"
+								},
+								{
+									"key": "incominglimit",
+									"value": "100"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "100"
+								},
+								{
+									"key": "busylevel",
+									"value": "0"
+								},
+								{
+									"key": "codecs",
+									"value": "ulaw,alaw"
+								},
+								{
+									"key": "codecs_ptime",
+									"value": "50,60"
+								},
+								{
+									"key": "emerg_trunk",
+									"value": "no"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 420421",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=61&did=38735420421&dest_type=0&destination=421&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "61"
+								},
+								{
+									"key": "did",
+									"value": "38735420421"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "421"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 420422",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=61&did=38735420422&dest_type=0&destination=422&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "61"
+								},
+								{
+									"key": "did",
+									"value": "38735420422"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "422"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 420423",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=61&did=38735420423&dest_type=0&destination=423&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "61"
+								},
+								{
+									"key": "did",
+									"value": "38735420423"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "423"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 420424",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=61&did=38735420424&dest_type=0&destination=424&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "61"
+								},
+								{
+									"key": "did",
+									"value": "38735420424"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "424"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 420425",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_91}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=61&did=38735420425&dest_type=0&destination=425&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_91}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "61"
+								},
+								{
+									"key": "did",
+									"value": "38735420425"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "425"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tenant_450",
+			"item": [
+				{
+					"name": "Create Tenant Package",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.package.add&name=API_Paket&extensions=20&voicemails=20&queues=20&ivrs=20&cfs=20&rgroups=20&hot_desking=20&call_recordings=1&monitoring=1&call_screening=1&restrict_splans=0&allowed_service_plans=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.package.add"
+								},
+								{
+									"key": "name",
+									"value": "API_Paket"
+								},
+								{
+									"key": "extensions",
+									"value": "20"
+								},
+								{
+									"key": "voicemails",
+									"value": "20"
+								},
+								{
+									"key": "queues",
+									"value": "20"
+								},
+								{
+									"key": "ivrs",
+									"value": "20"
+								},
+								{
+									"key": "cfs",
+									"value": "20"
+								},
+								{
+									"key": "rgroups",
+									"value": "20"
+								},
+								{
+									"key": "hot_desking",
+									"value": "20"
+								},
+								{
+									"key": "call_recordings",
+									"value": "1"
+								},
+								{
+									"key": "monitoring",
+									"value": "1"
+								},
+								{
+									"key": "call_screening",
+									"value": "1"
+								},
+								{
+									"key": "restrict_splans",
+									"value": "0"
+								},
+								{
+									"key": "allowed_service_plans",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Tenant 450",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.tenant.add&tenant_name=Tenant_450&tenant_code=450&package=1&ext_length=3&country=135&national=0&international=00&apusername=admin&appassword=Test123!&localcodecs=ulaw:alaw:g722:h264&remotecodecs=ulaw:alaw:g722:h264:g729:gsm&networkcodecs=gsm",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.tenant.add"
+								},
+								{
+									"key": "tenant_name",
+									"value": "Tenant_450"
+								},
+								{
+									"key": "tenant_code",
+									"value": "450"
+								},
+								{
+									"key": "package",
+									"value": "1"
+								},
+								{
+									"key": "ext_length",
+									"value": "3"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "apusername",
+									"value": "admin"
+								},
+								{
+									"key": "appassword",
+									"value": "Test123!"
+								},
+								{
+									"key": "localcodecs",
+									"value": "ulaw:alaw:g722:h264"
+								},
+								{
+									"key": "remotecodecs",
+									"value": "ulaw:alaw:g722:h264:g729:gsm"
+								},
+								{
+									"key": "networkcodecs",
+									"value": "gsm"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 451",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=451&name=Ext451&email=ext451@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "451"
+								},
+								{
+									"key": "name",
+									"value": "Ext451"
+								},
+								{
+									"key": "email",
+									"value": "ext451@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 452",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=452&name=Ext452&email=ext452@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "452"
+								},
+								{
+									"key": "name",
+									"value": "Ext452"
+								},
+								{
+									"key": "email",
+									"value": "ext452@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 453",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=453&name=Ext453&email=ext453@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "453"
+								},
+								{
+									"key": "name",
+									"value": "Ext453"
+								},
+								{
+									"key": "email",
+									"value": "ext453@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 454",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=454&name=Ext454&email=ext454@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "454"
+								},
+								{
+									"key": "name",
+									"value": "Ext454"
+								},
+								{
+									"key": "email",
+									"value": "ext454@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Extansion 455",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.ext.add&server=2&ext=455&name=Ext455&email=ext455@test.com&prot=sip&location=2&ua=50&status=1&secret=Test123!&pin=1111&incominglimit=2&outgoinglimit=2&voicemail=1",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.ext.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "ext",
+									"value": "455"
+								},
+								{
+									"key": "name",
+									"value": "Ext455"
+								},
+								{
+									"key": "email",
+									"value": "ext455@test.com"
+								},
+								{
+									"key": "prot",
+									"value": "sip"
+								},
+								{
+									"key": "location",
+									"value": "2"
+								},
+								{
+									"key": "ua",
+									"value": "50"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								},
+								{
+									"key": "secret",
+									"value": "Test123!"
+								},
+								{
+									"key": "pin",
+									"value": "1111"
+								},
+								{
+									"key": "incominglimit",
+									"value": "2"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "2"
+								},
+								{
+									"key": "voicemail",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Trunk to 90",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.trunk.add&server=1&name=TrunkTo_90&provider_id=20&type=friend&dtmfmode=rfc2833&status=active&country=135&national=0&international=00&e164a=yes&host=10.1.165.90&username=admin&insecure=port,invite&looserouting=yes&incominglimit=100&outgoinglimit=100&busylevel=0&codecs=ulaw,alaw&codecs_ptime=50,60&emerg_trunk=no",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.trunk.add"
+								},
+								{
+									"key": "server",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "TrunkTo_90"
+								},
+								{
+									"key": "provider_id",
+									"value": "20"
+								},
+								{
+									"key": "type",
+									"value": "friend"
+								},
+								{
+									"key": "dtmfmode",
+									"value": "rfc2833"
+								},
+								{
+									"key": "status",
+									"value": "active"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "e164a",
+									"value": "yes"
+								},
+								{
+									"key": "host",
+									"value": "10.1.165.90"
+								},
+								{
+									"key": "username",
+									"value": "admin"
+								},
+								{
+									"key": "insecure",
+									"value": "port,invite"
+								},
+								{
+									"key": "looserouting",
+									"value": "yes"
+								},
+								{
+									"key": "incominglimit",
+									"value": "100"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "100"
+								},
+								{
+									"key": "busylevel",
+									"value": "0"
+								},
+								{
+									"key": "codecs",
+									"value": "ulaw,alaw"
+								},
+								{
+									"key": "codecs_ptime",
+									"value": "50,60"
+								},
+								{
+									"key": "emerg_trunk",
+									"value": "no"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Trunk to 91",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.trunk.add&server=1&name=TrunkTo_91&provider_id=20&type=friend&dtmfmode=rfc2833&status=active&country=135&national=0&international=00&e164a=yes&host=10.1.165.91&username=admin&insecure=port,invite&looserouting=yes&incominglimit=100&outgoinglimit=100&busylevel=0&codecs=ulaw,alaw&codecs_ptime=50,60&emerg_trunk=no",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.trunk.add"
+								},
+								{
+									"key": "server",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "TrunkTo_91"
+								},
+								{
+									"key": "provider_id",
+									"value": "20"
+								},
+								{
+									"key": "type",
+									"value": "friend"
+								},
+								{
+									"key": "dtmfmode",
+									"value": "rfc2833"
+								},
+								{
+									"key": "status",
+									"value": "active"
+								},
+								{
+									"key": "country",
+									"value": "135"
+								},
+								{
+									"key": "national",
+									"value": "0"
+								},
+								{
+									"key": "international",
+									"value": "00"
+								},
+								{
+									"key": "e164a",
+									"value": "yes"
+								},
+								{
+									"key": "host",
+									"value": "10.1.165.91"
+								},
+								{
+									"key": "username",
+									"value": "admin"
+								},
+								{
+									"key": "insecure",
+									"value": "port,invite"
+								},
+								{
+									"key": "looserouting",
+									"value": "yes"
+								},
+								{
+									"key": "incominglimit",
+									"value": "100"
+								},
+								{
+									"key": "outgoinglimit",
+									"value": "100"
+								},
+								{
+									"key": "busylevel",
+									"value": "0"
+								},
+								{
+									"key": "codecs",
+									"value": "ulaw,alaw"
+								},
+								{
+									"key": "codecs_ptime",
+									"value": "50,60"
+								},
+								{
+									"key": "emerg_trunk",
+									"value": "no"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 450451",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735450451&dest_type=0&destination=451&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735450451"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "451"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 450452",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735450452&dest_type=0&destination=452&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735450452"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "452"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 450453",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735450453&dest_type=0&destination=453&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735450453"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "453"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 450454",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735450454&dest_type=0&destination=454&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735450454"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "454"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DID 450455",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP_95}}/index.php?apikey={{API_Key}}&action=pbxware.did.add&server=2&trunk=62&did=38735450455&dest_type=0&destination=455&disabled=0",
+							"protocol": "http",
+							"host": [
+								"{{IP_95}}"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{API_Key}}"
+								},
+								{
+									"key": "action",
+									"value": "pbxware.did.add"
+								},
+								{
+									"key": "server",
+									"value": "2"
+								},
+								{
+									"key": "trunk",
+									"value": "62"
+								},
+								{
+									"key": "did",
+									"value": "38735450455"
+								},
+								{
+									"key": "dest_type",
+									"value": "0"
+								},
+								{
+									"key": "destination",
+									"value": "455"
+								},
+								{
+									"key": "disabled",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{API_Key}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "API_Key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_Key",
+			"value": "Test123456789",
+			"type": "string"
+		},
+		{
+			"key": "IP_90",
+			"value": "10.1.165.90",
+			"type": "string"
+		},
+		{
+			"key": "IP_91",
+			"value": "10.1.165.91",
+			"type": "string"
+		},
+		{
+			"key": "IP_92",
+			"value": "10.1.165.92",
+			"type": "string"
+		},
+		{
+			"key": "IP_93",
+			"value": "10.1.165.93",
+			"type": "string"
+		},
+		{
+			"key": "IP_94",
+			"value": "10.1.165.94",
+			"type": "string"
+		},
+		{
+			"key": "IP_95",
+			"value": "10.1.165.95",
+			"type": "string"
+		}
+	]
+}
